@@ -50,10 +50,13 @@ mlops_labs
    ```
    pip install -r requirements.txt
 5. Train the model (saves cancer_model.pkl + metrics.pkl in model/):
+   ```
    python -m src.train
 6. Run the FastAPI server:
+   ```
    uvicorn src.main:app --reload
 7. Open Swagger UI for testing:
+   ```
    http://127.0.0.1:8000/docs
 
 ## API Endpoints
