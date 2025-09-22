@@ -48,11 +48,13 @@ mlops_labs
    fastapi_lab1_env\Scripts\activate      # Windows
 3. Install dependencies:
    pip install -r requirements.txt
-4. Train the model (saves cancer_model.pkl + metrics.pkl in model/):
+
+   pip install -r requirements.txt
+5. Train the model (saves cancer_model.pkl + metrics.pkl in model/):
    python -m src.train
-5. Run the FastAPI server:
+6. Run the FastAPI server:
    uvicorn src.main:app --reload
-6. Open Swagger UI for testing:
+7. Open Swagger UI for testing:
    http://127.0.0.1:8000/docs
 
 ## API Endpoints
