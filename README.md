@@ -1,4 +1,4 @@
-# Breast Cancer Classification API (FastAPI Lab Submission)
+# Breast Cancer Classification
 
 ## Overview
 This project implements a **machine learning model served through a FastAPI web API**.  
