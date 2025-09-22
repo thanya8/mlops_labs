@@ -61,37 +61,37 @@ mlops_labs
    http://127.0.0.1:8000/docs
 
 ## API Endpoints
-Root
+#### Root
 
-GET /
+`GET /`
 Returns welcome message.
 Example:
 
-{"message": "Breast Cancer Classification API is running"}
+`{"message": "Breast Cancer Classification API is running"}`
 
-Single Prediction
+#### Single Prediction
 
-POST /predict
+`POST /predict`
 Input: JSON with a list of 30 numeric features.
 Example request:
-
+```
 {
   "features": [14.1,20.0,92.0,600.0,0.09,0.10,0.07,0.05,0.18,0.06,
                0.3,1.0,2.5,25.0,0.005,0.02,0.02,0.01,0.01,0.003,
                15.0,25.0,100.0,800.0,0.12,0.2,0.2,0.1,0.3,0.07]
 }
-
+```
 
 Response:
 
-{"prediction": 1, "probability": 0.95}
+`{"prediction": 1, "probability": 0.95}`
 
-Batch Prediction
+#### Batch Prediction
 
-POST /predict_batch
+`POST /predict_batch`
 Input: List of JSON objects.
 Example request:
-
+```
 [
   {"features":[14.1,20.0,92.0,600.0,0.09,0.10,0.07,0.05,0.18,0.06,
                0.3,1.0,2.5,25.0,0.005,0.02,0.02,0.01,0.01,0.003,
@@ -101,29 +101,29 @@ Example request:
                14.0,22.0,90.0,700.0,0.11,0.18,0.19,0.09,0.25,0.06]}
 ]
 
-
+```
 Response:
-
+`
 {
   "predictions": [
     {"prediction": 1, "probability": 0.95},
     {"prediction": 0, "probability": 0.92}
   ]
 }
+`
+#### Health Check
 
-Health Check
-
-GET /health
+`GET /health`
 Returns API and model info.
 Example:
-
+`
 {"status": "ok", "model": "RandomForestClassifier", "version": "1.0"}
+`
+#### Metrics
 
-Metrics
-
-GET /metrics
+`GET /metrics`
 Returns model evaluation results.
 Example:
 
-{"accuracy": 0.95, "f1_score": 0.94}
+`{"accuracy": 0.95, "f1_score": 0.94}`
 
