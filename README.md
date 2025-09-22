@@ -5,8 +5,8 @@ This project implements a **machine learning model served through a FastAPI web 
 It predicts whether a breast cancer tumor is **benign (0)** or **malignant (1)** based on diagnostic features.  
 
 This is a modified version of the original lab template:
-- Dataset changed from **Iris/Wine** → **Breast Cancer Wisconsin dataset**
-- Model changed from **Logistic Regression** → **RandomForestClassifier**
+- Dataset changed from **Iris** → **Breast Cancer Wisconsin dataset**
+- Model changed from **DecisionTreeClassifier** → **RandomForestClassifier**
 - Added endpoints: `/metrics` and `/health`
 - API returns both **prediction** and **confidence probability**
 
