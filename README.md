@@ -21,6 +21,7 @@ This is a modified version of the original lab template:
 
 
 ## Project Structure
+```
 mlops_labs
 └── fastapi_lab1
     ├── assets/
