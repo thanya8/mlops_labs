@@ -1,5 +1,3 @@
-# mlops_labs
-FastAPI project for Breast Cancer Classification using RandomForest
 # Breast Cancer Classification API (FastAPI Lab Submission)
 
 ## Overview
