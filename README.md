@@ -88,8 +88,10 @@ Example request:
 ```
 
 Response:
+`
 
-`{"prediction": 1, "probability": 0.95}`
+{"prediction": 1, "probability": 0.95}
+`
 
 #### Batch Prediction
 
