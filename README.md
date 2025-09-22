@@ -47,8 +47,7 @@ mlops_labs
    source fastapi_lab1_env/bin/activate   # Mac/Linux
    fastapi_lab1_env\Scripts\activate      # Windows
 3. Install dependencies:
-   pip install -r requirements.txt
-
+   ```
    pip install -r requirements.txt
 5. Train the model (saves cancer_model.pkl + metrics.pkl in model/):
    python -m src.train
