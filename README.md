@@ -38,8 +38,8 @@ mlops_labs
     └── requirements.txt
     
 
-
-##  Setup & Installation
+```
+## Setup & Installation
 
 1. Clone the repo or download the folder.
 2. Create and activate a virtual environment:
