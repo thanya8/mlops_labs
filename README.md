@@ -63,8 +63,8 @@ mlops_labs
 ## API Endpoints
 #### Root
 
-`GET /`
-Returns welcome message.
+`GET /`: Returns welcome message.
+
 Example:
 
 `{"message": "Breast Cancer Classification API is running"}`
@@ -72,7 +72,9 @@ Example:
 #### Single Prediction
 
 `POST /predict`
+
 Input: JSON with a list of 30 numeric features.
+
 Example request:
 ```
 {
@@ -89,7 +91,9 @@ Response:
 #### Batch Prediction
 
 `POST /predict_batch`
+
 Input: List of JSON objects.
+
 Example request:
 ```
 [
@@ -114,7 +118,9 @@ Response:
 #### Health Check
 
 `GET /health`
+
 Returns API and model info.
+
 Example:
 `
 {"status": "ok", "model": "RandomForestClassifier", "version": "1.0"}
@@ -122,7 +128,9 @@ Example:
 #### Metrics
 
 `GET /metrics`
+
 Returns model evaluation results.
+
 Example:
 
 `{"accuracy": 0.95, "f1_score": 0.94}`
