@@ -27,7 +27,8 @@ mlops_labs
     ├── assets/
     ├── fastapi_lab1_env/
     ├── model/
-    │   └── iris_model.pkl
+    │   └── cancer_model.pkl
+    |   |__metrics.pkl
     ├── src/
     │   ├── __init__.py
     │   ├── data.py
@@ -63,7 +64,9 @@ mlops_labs
 ## API Endpoints
 #### Root
 
-`GET /`: Returns welcome message.
+`GET /`
+
+Returns welcome message.
 
 Example:
 
