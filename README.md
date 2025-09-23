@@ -110,14 +110,12 @@ Example request:
 
 ```
 Response:
-`
-{
+`{
   "predictions": [
     {"prediction": 1, "probability": 0.95},
     {"prediction": 0, "probability": 0.92}
   ]
-}
-`
+}`
 #### Health Check
 
 `GET /health`
@@ -125,9 +123,7 @@ Response:
 Returns API and model info.
 
 Example:
-`
-{"status": "ok", "model": "RandomForestClassifier", "version": "1.0"}
-`
+`{"status": "ok", "model": "RandomForestClassifier", "version": "1.0"}`
 #### Metrics
 
 `GET /metrics`
